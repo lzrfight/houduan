@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef6db500-760e-4cde-acee-e1600e5ccde7" name="Default Changelist" comment="" />
+    <list default="true" id="ef6db500-760e-4cde-acee-e1600e5ccde7" name="Default Changelist" comment="后端的代码">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +39,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YnqiJnyupFIxN2uBmqCUYSZoXl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -113,12 +116,24 @@
       <workItem from="1585108335505" duration="944000" />
       <workItem from="1585128667476" duration="4274000" />
       <workItem from="1585189220698" duration="21000" />
-      <workItem from="1585189246019" duration="2807000" />
+      <workItem from="1585189246019" duration="11406000" />
     </task>
+    <task id="LOCAL-00001" summary="后端的代码">
+      <created>1585213337135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585213337135</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="后端的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端的代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1491" y="363" key="#Assign_Data_Sources" timestamp="1583917498498">
@@ -141,14 +156,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1585" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583589569362" />
-    <state x="1451" y="270" key="CommitChangelistDialog2" timestamp="1585213300351">
+    <state x="1451" y="270" key="CommitChangelistDialog2" timestamp="1585296527399">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1451" y="270" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585213300351" />
+    <state x="1451" y="270" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585296527399" />
     <state x="1128" y="255" key="FileChooserDialogImpl" timestamp="1585213179110">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1128" y="255" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1585213179110" />
+    <state x="1778" y="569" width="269" height="290" key="Github.ShareDialog" timestamp="1585213425471">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1778" y="569" width="269" height="290" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585213425471" />
     <state width="1288" height="433" key="GridCell.Tab.0.bottom" timestamp="1585115630460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -185,10 +204,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1206" y="200" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583592652079" />
-    <state x="1239" y="114" key="SettingsEditor" timestamp="1585213086609">
+    <state x="1239" y="114" key="SettingsEditor" timestamp="1585213410053">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1239" y="114" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1585213086609" />
+    <state x="1239" y="114" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1585213410053" />
     <state x="1494" y="526" key="com.intellij.ide.util.TipDialog" timestamp="1585128667168">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
