@@ -15,7 +15,7 @@ public class UserService {
                 return null !=user;
     }
 
-    private User getByName(String username) {
+    public User getByName(String username) {
         return userDAO.findByUsername(username);
     }
     public User get(String username, String password)
