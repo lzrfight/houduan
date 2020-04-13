@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService {
+public class  UserService {
     @Autowired
     UserDAO userDAO;
     public boolean isExist(String username)
@@ -25,5 +25,10 @@ public class UserService {
     public void add(User user)
     {
         userDAO.save(user);
+    }
+    public User get(int id)
+    {
+        User u = userDAO.findById(id).orElse(null);
+        return u;
     }
 }
