@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef6db500-760e-4cde-acee-e1600e5ccde7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/Realm/UserRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/config/ShiroConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/result/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/result/ResultFactory.java" afterDir="false" />
+    <list default="true" id="ef6db500-760e-4cde-acee-e1600e5ccde7" name="Default Changelist" comment="更新了加密的注册登陆">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/config/MyWebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/AdminUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/UserOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/AdminMenuDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/AdminRoleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/AdminRoleMenuDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/AdminUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/AdminUserRoleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/FoodDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/ShopDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/ShoppingDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/dao/UserOrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/AdminMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/AdminRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/AdminRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/AdminUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/AdminUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/Shopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/UserOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houduan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/houduan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/HouduanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/HouduanApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/result/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bishe/houduan/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bishe/houduan/HouduanApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bishe/houduan/HouduanApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bishe/houduan/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bishe/houduan/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bishe/houduan/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bishe/houduan/pojo/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bishe/houduan/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bishe/houduan/result/Result.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bishe/houduan/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bishe/houduan/service/UserService.class" afterDir="false" />
     </list>
@@ -25,12 +48,27 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="JavaScript File" />
+        <option value="package.json" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -135,7 +173,29 @@
       <workItem from="1585389599201" duration="4797000" />
       <workItem from="1585471158191" duration="10373000" />
       <workItem from="1585528679272" duration="709000" />
-      <workItem from="1585536629954" duration="17537000" />
+      <workItem from="1585536629954" duration="17688000" />
+      <workItem from="1585582970633" duration="788000" />
+      <workItem from="1585614300299" duration="13778000" />
+      <workItem from="1585660073682" duration="1937000" />
+      <workItem from="1585724535156" duration="8511000" />
+      <workItem from="1585794063096" duration="7465000" />
+      <workItem from="1585819675352" duration="2938000" />
+      <workItem from="1585877642661" duration="4485000" />
+      <workItem from="1585960015341" duration="6764000" />
+      <workItem from="1586050506306" duration="4957000" />
+      <workItem from="1586078116915" duration="8973000" />
+      <workItem from="1586134338856" duration="4277000" />
+      <workItem from="1586157563498" duration="6959000" />
+      <workItem from="1586232093653" duration="8485000" />
+      <workItem from="1586303871854" duration="8007000" />
+      <workItem from="1586350963254" duration="1660000" />
+      <workItem from="1586404364878" duration="7636000" />
+      <workItem from="1586439266006" duration="5053000" />
+      <workItem from="1586498997298" duration="887000" />
+      <workItem from="1586513365382" duration="6896000" />
+      <workItem from="1586586361355" duration="20519000" />
+      <workItem from="1586649998003" duration="25976000" />
+      <workItem from="1586756902782" duration="20671000" />
     </task>
     <task id="LOCAL-00001" summary="后端的代码">
       <created>1585213337135</created>
@@ -151,7 +211,35 @@
       <option name="project" value="LOCAL" />
       <updated>1585368338875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新了加密的注册登陆">
+      <created>1585581768942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585581768942</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新了加密的注册登陆">
+      <created>1586792238499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586792238499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="忘了加啥功能了">
+      <created>1586792331918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586792331918</updated>
+    </task>
+    <task id="LOCAL-00006" summary="也忘了改哪了">
+      <created>1586792353608</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586792353608</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,92 +247,135 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端的代码" />
+    <MESSAGE value="更新了加密的注册登陆" />
+    <MESSAGE value="忘了加啥功能了" />
+    <MESSAGE value="也忘了改哪了" />
+    <option name="LAST_COMMIT_MESSAGE" value="也忘了改哪了" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1491" y="363" key="#Assign_Data_Sources" timestamp="1583917498498">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1491" y="363" key="#Assign_Data_Sources/0.0.2560.1400@0.0.2560.1400" timestamp="1583917498498" />
-    <state x="1309" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583594045608">
+    <state x="1625" y="469" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586650285357">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1309" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583594045608" />
-    <state x="1660" y="388" key="#com.intellij.ide.util.MemberChooser" timestamp="1585478943082">
+    <state x="1625" y="469" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586650285357" />
+    <state x="1309" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585623726827">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1660" y="388" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1585478943082" />
-    <state x="1638" y="568" width="431" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583640105256">
+    <state x="1309" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585623726827" />
+    <state x="1660" y="388" key="#com.intellij.ide.util.MemberChooser" timestamp="1586791145917">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1638" y="568" width="431" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400@0.0.2560.1400" timestamp="1583640105256" />
-    <state x="1585" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583589569362">
+    <state x="1660" y="388" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1586791145917" />
+    <state x="1638" y="568" width="431" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586595869058">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1585" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1583589569362" />
-    <state x="1451" y="270" key="CommitChangelistDialog2" timestamp="1585368338183">
+    <state x="1638" y="568" width="431" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400@0.0.2560.1400" timestamp="1586595869058" />
+    <state x="1585" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586650851665">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1451" y="270" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585368338183" />
+    <state x="1585" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586650851665" />
+    <state x="1451" y="270" key="CommitChangelistDialog2" timestamp="1586792546631">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1451" y="270" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1586792546631" />
     <state x="1128" y="255" key="FileChooserDialogImpl" timestamp="1585552305214">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1128" y="255" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1585552305214" />
-    <state x="1778" y="569" width="269" height="290" key="Github.ShareDialog" timestamp="1585213425471">
+    <state x="1778" y="569" width="269" height="290" key="Github.ShareDialog" timestamp="1585583031946">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1778" y="569" width="269" height="290" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585213425471" />
-    <state width="1220" height="478" key="GridCell.Tab.0.bottom" timestamp="1585581512703">
+    <state x="1778" y="569" width="269" height="290" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585583031946" />
+    <state width="1328" height="653" key="GridCell.Tab.0.bottom" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512703" />
-    <state width="1220" height="478" key="GridCell.Tab.0.center" timestamp="1585581512703">
+    <state width="1234" height="1100" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586016596222" />
+    <state width="1328" height="653" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.0.center" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512703" />
-    <state width="1220" height="478" key="GridCell.Tab.0.left" timestamp="1585581512703">
+    <state width="1234" height="1100" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1586016596222" />
+    <state width="1328" height="653" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.0.left" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512703" />
-    <state width="1220" height="478" key="GridCell.Tab.0.right" timestamp="1585581512703">
+    <state width="1234" height="1100" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1586016596221" />
+    <state width="1328" height="653" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.0.right" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512703" />
-    <state width="1220" height="478" key="GridCell.Tab.1.bottom" timestamp="1585581512704">
+    <state width="1234" height="1100" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1586016596222" />
+    <state width="1328" height="653" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.1.bottom" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512704" />
-    <state width="1220" height="478" key="GridCell.Tab.1.center" timestamp="1585581512703">
+    <state width="1234" height="1100" key="GridCell.Tab.1.bottom/0.0.1500.960@0.0.1500.960" timestamp="1586016596223" />
+    <state width="1328" height="653" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.1.center" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512703" />
-    <state width="1220" height="478" key="GridCell.Tab.1.left" timestamp="1585581512703">
+    <state width="1234" height="1100" key="GridCell.Tab.1.center/0.0.1500.960@0.0.1500.960" timestamp="1586016596223" />
+    <state width="1328" height="653" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.1.left" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512703" />
-    <state width="1220" height="478" key="GridCell.Tab.1.right" timestamp="1585581512704">
+    <state width="1234" height="1100" key="GridCell.Tab.1.left/0.0.1500.960@0.0.1500.960" timestamp="1586016596222" />
+    <state width="1328" height="653" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1328" height="653" key="GridCell.Tab.1.right" timestamp="1586791841349">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1220" height="478" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585581512704" />
-    <state x="1206" y="200" key="Maven.ArtifactSearchDialog" timestamp="1585394376094">
+    <state width="1234" height="1100" key="GridCell.Tab.1.right/0.0.1500.960@0.0.1500.960" timestamp="1586016596223" />
+    <state width="1328" height="653" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586791841349" />
+    <state width="1287" height="489" key="GridCell.Tab.2.bottom" timestamp="1586704951235">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1206" y="200" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585394376094" />
+    <state width="1287" height="489" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586704951235" />
+    <state width="1287" height="489" key="GridCell.Tab.2.center" timestamp="1586704951235">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1287" height="489" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586704951235" />
+    <state width="1287" height="489" key="GridCell.Tab.2.left" timestamp="1586704951235">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1287" height="489" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586704951235" />
+    <state width="1287" height="489" key="GridCell.Tab.2.right" timestamp="1586704951235">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1287" height="489" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586704951235" />
+    <state x="1206" y="200" key="Maven.ArtifactSearchDialog" timestamp="1585617888846">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1206" y="200" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585617888846" />
     <state x="1360" y="114" key="SettingsEditor" timestamp="1585558536016">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1360" y="114" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1585558536016" />
-    <state x="1110" y="553" key="com.intellij.ide.util.TipDialog" timestamp="1585536666059">
+    <state x="1522" y="434" key="Vcs.Push.Dialog.v2" timestamp="1585585042507">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1110" y="553" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585536666059" />
-    <state x="1168" y="377" key="new project wizard" timestamp="1585551755480">
+    <state x="1522" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585585042507" />
+    <state x="1112" y="554" key="com.intellij.ide.util.TipDialog" timestamp="1586756905636">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1168" y="377" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1585551755480" />
+    <state x="1112" y="554" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586756905636" />
+    <state x="996" y="492" key="git4idea.merge.GitPullDialog" timestamp="1586792051933">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="996" y="492" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586792051933" />
+    <state x="1168" y="377" key="new project wizard" timestamp="1585616940046">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1168" y="377" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1585616940046" />
     <state x="1579" y="333" key="run.anything.popup" timestamp="1585572716799">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1579" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1585572716799" />
+    <state x="1569" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1586778706444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1569" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1586778706444" />
   </component>
 </project>
