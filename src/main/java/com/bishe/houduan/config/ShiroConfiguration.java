@@ -1,4 +1,5 @@
 package com.bishe.houduan.config;
+
 import com.bishe.houduan.Realm.UserRealm;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.mgt.SecurityManager;
@@ -15,21 +16,21 @@ public class ShiroConfiguration {
     public static LifecycleBeanPostProcessor getLifecycleBeanProcessor() {
         return new LifecycleBeanPostProcessor();
     }
-
+    //3
     @Bean
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         return shiroFilterFactoryBean;
     }
-
+    //2默认写法，然后关联realm
     @Bean
     public SecurityManager securityManager() {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
         securityManager.setRealm(getUserRealm());
         return securityManager;
     }
-
+    //1创建realm对象，需要自定义类
     @Bean
     public UserRealm getUserRealm() {
         UserRealm userRealm = new UserRealm();
