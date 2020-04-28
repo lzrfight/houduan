@@ -48,4 +48,10 @@ public class LoginController {
         System.out.println("成功退出");
         return ResultFactory.buildSuccessResult(message);
     }
+    @CrossOrigin
+    @ResponseBody
+    @GetMapping(value = "api/authentication")
+    public String authentication(){
+        return "身份认证成功";
+    }
 }

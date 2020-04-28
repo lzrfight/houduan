@@ -3,6 +3,7 @@ package com.bishe.houduan.controller;
 import com.bishe.houduan.pojo.User;
 import com.bishe.houduan.result.Result;
 import com.bishe.houduan.result.ResultFactory;
+import com.bishe.houduan.service.AdminUserRoleService;
 import com.bishe.houduan.service.UserService;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.crypto.hash.SimpleHash;
@@ -18,7 +19,8 @@ import org.springframework.web.util.HtmlUtils;
 public class RegisterController {
     @Autowired
     UserService userService;
-
+    @Autowired
+    AdminUserRoleService adminUserRoleService;
     @CrossOrigin
     @PostMapping(value = "api/register")
     @ResponseBody
@@ -36,8 +38,10 @@ public class RegisterController {
         int times = 2;
         String encodedPassword = new SimpleHash("md5", password, salt, times).toString();
         user.setSalt(salt);
+        user.setMoney(0);
         user.setPassword(encodedPassword);
         userService.add(user);
+        adminUserRoleService.add(user);
         return ResultFactory.buildSuccessResult(user);
     }
 }

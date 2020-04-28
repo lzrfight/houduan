@@ -7,4 +7,10 @@ import java.util.List;
 
 public interface ShoppingDAO extends JpaRepository<Shopping,Integer> {
     List<Shopping> findAll();
+    List<Shopping> findAllByUid(int uid);
+//    Shopping findAllByUid(int uid);
+//    Shopping findAllByusername(String username);
+    List<Shopping> findAllByname(String foodname);
+    void deleteAllById(int id);
+    void deleteAllByname(String foodname);
 }

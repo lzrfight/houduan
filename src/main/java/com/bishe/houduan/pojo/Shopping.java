@@ -14,19 +14,29 @@ public class Shopping {
     @Column(name = "id")
     int id;
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    @ManyToOne
-            @JoinColumn(name = "uid")
-            private User user;
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
+//
+//    @ManyToOne
+//            @JoinColumn(name = "uid")
+//            private User user;
     String name;
     int amount;
+
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    int uid;
 
     public int getId() {
         return id;

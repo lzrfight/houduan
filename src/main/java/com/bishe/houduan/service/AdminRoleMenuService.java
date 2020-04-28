@@ -11,31 +11,32 @@ import java.util.List;
 public class AdminRoleMenuService {
     @Autowired
     AdminRoleMenuDAO adminRoleMenuDAO;
-    public List<AdminRoleMenu> findAllByRid(int rid)
-    {
+
+    public List<AdminRoleMenu> findAllByRid(int rid) {
+
         return adminRoleMenuDAO.findAllByRid(rid);
     }
-    public List<AdminRoleMenu> findAllByRidIn(List<Integer> rids)
-    {
-        return  adminRoleMenuDAO.findAllByRidIn(rids);
+
+    public List<AdminRoleMenu> findAllByRidIn(List<Integer> rids) {
+        return adminRoleMenuDAO.findAllByRidIn(rids);
     }
-//    public void save(AdminRoleMenu rm)
-//    {
-//        adminRoleMenuDAO.save(rm);
-//    }
+
+    public void save(AdminRoleMenu rm) {
+        adminRoleMenuDAO.save(rm);
+    }
+
 //    @Modifying
 //    @Transactional
-//    public void updateRoleMenu(int rid, Map<String,List<Integer>> menusIds)
-//    {
+//    public void updateRoleMenu(int rid, Map<String, List<Integer>> menusIds) {
 //        adminRoleMenuDAO.deleteAllByRid(rid);
 //        List<AdminRoleMenu> rms = new ArrayList<>();
-//        for (Integer mid: menusIds.get("menusIds"))
-//        {
+//        for (Integer mid : menusIds.get("menusIds")) {
 //            AdminRoleMenu rm = new AdminRoleMenu();
 //            rm.setMid(mid);
 //            rm.setRid(rid);
 //            rms.add(rm);
 //        }
+//
 //        adminRoleMenuDAO.saveAll(rms);
 //    }
 }

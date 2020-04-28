@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ShopDAO extends JpaRepository<Shop,Integer> {
     List<Shop> findAll();
+    Shop findAllByUsername(String username);
+    void deleteAllById(int id);
 }

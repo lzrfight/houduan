@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface UserOrderDAO  extends JpaRepository<UserOrder,Integer> {
     List<UserOrder> findAll();
+    List<UserOrder> findAllByShopname(String shopname);
+    List<UserOrder> findAllByUsername(String username);
 }

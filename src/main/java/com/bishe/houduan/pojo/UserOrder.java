@@ -1,36 +1,24 @@
 package com.bishe.houduan.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.Date;
 
+@Data
 @Entity
-@Table(name = "purchase")
+@ToString
+@Table(name = "orderform")
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
 public class UserOrder {
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     int id;
-
-    public String getCaole() {
-        return caole;
-    }
-
-    public void setCaole(String caole) {
-        this.caole = caole;
-    }
-
-    String caole;
+    String shopname;
+    String username;
+    Date time;
 
 }

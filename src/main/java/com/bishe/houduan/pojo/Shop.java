@@ -33,6 +33,26 @@ public class Shop {
     String username;
     String phone;
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    String password;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    String name;
+
     public int getId() {
         return id;
     }

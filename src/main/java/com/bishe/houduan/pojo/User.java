@@ -3,7 +3,6 @@ package com.bishe.houduan.pojo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
-
 @Entity
 @Table(name = "user")
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
@@ -16,6 +15,16 @@ public class User {
     String username;
     String password;
     String salt;
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    int money;
 
     public String getSalt() {
         return salt;

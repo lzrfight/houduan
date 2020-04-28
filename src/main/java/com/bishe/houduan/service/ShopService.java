@@ -19,4 +19,13 @@ public class ShopService {
     {
         shopDAO.save(shop);
     }
+//    根据username查找shopname来显示数据
+    public Shop findbyusername(String username)
+    {
+        return shopDAO.findAllByUsername(username);
+    }
+    public void deleteshop(int id)
+    {
+        shopDAO.deleteAllById(id);
+    }
 }

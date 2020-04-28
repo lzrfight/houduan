@@ -11,5 +11,4 @@ public class HouduanApplication {
     public static void main(String[] args) {
         SpringApplication.run(HouduanApplication.class, args);
     }
-
 }

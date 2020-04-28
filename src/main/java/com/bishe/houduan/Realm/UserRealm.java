@@ -28,6 +28,7 @@ public class UserRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String userName = token.getPrincipal().toString();
+        System.out.println(userName);
         User user = userService.getByName(userName);
         String passwordInDB = user.getPassword();
         String salt = user.getSalt();
