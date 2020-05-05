@@ -1,27 +1,43 @@
 package com.bishe.houduan.controller;
 
-import com.bishe.houduan.dao.BoardDAO;
 import com.bishe.houduan.pojo.Board;
+import com.bishe.houduan.result.Result;
+import com.bishe.houduan.result.ResultFactory;
+import com.bishe.houduan.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import javax.validation.Valid;
+import java.util.Date;
 
 @RestController
 public class BoardController {
     @Autowired
-    BoardDAO boardDAO;
-    @GetMapping("/api/board")
-    public List<Board> list() throws Exception
-    {
-        return boardDAO.findAll();
+    BoardService boardService;
+
+    @PostMapping("api/admin/content/article")
+    public Result saveArticle(@RequestBody @Valid Board article) {
+        System.out.println(article);
+        Date currentDate = new Date(System.currentTimeMillis());
+        article.setArticleDate(currentDate);
+        boardService.addOrUpdate(article);
+        return ResultFactory.buildSuccessResult("保存成功");
     }
 
-    @PostMapping("/api/addboard")
-    public void add(Board board)throws Exception
-    {
-        boardDAO.save(board);
+    @GetMapping("/api/article")
+    public Result listArticles() {
+        return ResultFactory.buildSuccessResult(boardService.list());
+    }
+
+    @GetMapping("/api/article/{id}")
+    public Result getOneArticle(@PathVariable("id") int id) {
+        System.out.println(boardService.findById(id));
+        return ResultFactory.buildSuccessResult(boardService.findById(id));
+    }
+
+    @DeleteMapping("/api/admin/content/article/{id}")
+    public Result deleteArticle(@PathVariable("id") int id) {
+        boardService.delete(id);
+        return ResultFactory.buildSuccessResult("删除成功");
     }
 }

@@ -1,23 +1,19 @@
 package com.bishe.houduan.pojo;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Date;
-
-@Data
 @Entity
+@Data
 @ToString
-@Table(name = "orderform")
-@JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
-public class UserOrder {
+@Table(name = "admin_role_menu")
+@JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
+public class AdminRoleMenu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     int id;
-    String shopname;
-    String username;
-    Date time;
+    int rid;//role表的id
+    int mid;//menu表的id
 }

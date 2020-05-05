@@ -12,7 +12,8 @@ import java.util.List;
 public class AdminUserRoleService {
     @Autowired
     AdminUserRoleDAO adminUserRoleDAO;
-
+    @Autowired
+    UserService userService;
     public List<AdminUserRole> listAllByUid(int uid) {
 
         return adminUserRoleDAO.findAllByUid(uid);
@@ -37,5 +38,15 @@ public class AdminUserRoleService {
         adminUserRole.setUid(userId);
         adminUserRole.setRid(rid);
         adminUserRoleDAO.save(adminUserRole);
+    }
+//    统计需要调用 根据用户查询角色
+    public int findrole(String username)
+    {
+//        根据username查到user对象 获得userid
+        User user = userService.getByName(username);
+        int uid = user.getId();
+        AdminUserRole adminUserRole = adminUserRoleDAO.findByUid(uid);
+//        找到对应的角色值返回
+        return adminUserRole.getRid();
     }
 }

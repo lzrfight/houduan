@@ -5,19 +5,18 @@ import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Data
 @Entity
 @ToString
-@Table(name = "orderform")
-@JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
-public class UserOrder {
+@Table(name = "advice")
+@JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
+public class Advice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     int id;
     String shopname;
-    String username;
-    Date time;
+    int rate;
+    String comment;
 }

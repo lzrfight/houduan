@@ -11,12 +11,22 @@ import java.util.List;
 public class BoardService {
     @Autowired
     BoardDAO boardDAO;
-    public List<Board> find()
-    {
-       return boardDAO.findAll();
+    public List<Board> list() {
+        return boardDAO.findAll();
     }
-    public void add(Board board)
-    {
+
+    public Board findById(int id) {
+        return boardDAO.findById(id);
+    }
+
+    public void addOrUpdate(Board board) {
+
         boardDAO.save(board);
     }
+
+    public void delete(int id) {
+
+        boardDAO.deleteById(id);
+    }
+
 }

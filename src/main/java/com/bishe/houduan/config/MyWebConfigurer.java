@@ -26,7 +26,7 @@ public class MyWebConfigurer implements WebMvcConfigurer {
 //    }
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "c:/temp/img/");
+        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "d:/workspace/img/");
     }
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -70,7 +70,14 @@ public class MyWebConfigurer implements WebMvcConfigurer {
                 .excludePathPatterns("/api/register")
                 .excludePathPatterns("/api/food")
                 .excludePathPatterns("/api/categories/{cid}/food")
+                .excludePathPatterns("/api/board")
+                .excludePathPatterns("/api/address")
+                .excludePathPatterns("/api/article")
+                .excludePathPatterns("/api/article/{id}")
+                .excludePathPatterns("/api/covers")
+                .excludePathPatterns("/api/file/**")
                 .excludePathPatterns("/swagger-resources/**", "/webjars/**", "/v2/**", "/swagger-ui.html/**");
+
     }
 }
 // 前没有配置的后端

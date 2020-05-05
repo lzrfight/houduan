@@ -5,19 +5,20 @@ import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Data
 @Entity
 @ToString
-@Table(name = "orderform")
+@Table(name="admin_role")
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
-public class UserOrder {
+public class AdminRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name="id")
     int id;
-    String shopname;
-    String username;
-    Date time;
+    String name;
+
+    @Column(name="name_zh")
+    String nameZh;
+    //未添加权限转换部分
 }
